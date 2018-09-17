@@ -2,9 +2,7 @@
 
 ![Cat](img/cat.jpg)
 
-## Work in Progress
-
-How many times can you click the cat before you get tired of it?
+### How many times can you click the cat before you get tired of it?
 
 1. Clone the repository
 2. Open index.html in your browser
