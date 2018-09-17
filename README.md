@@ -1,5 +1,7 @@
 # Cat Clicker
 
+![Cat](img/cat.jpg)
+
 ## Work in Progress
 
 How many times can you click the cat before you get tired of it?
