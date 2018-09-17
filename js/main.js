@@ -1,18 +1,36 @@
 /*
  * This app will record the number of times
- * you click the cat.
+ * you click each cat.
 */
 
-//cat image
-const cat = document.querySelector(".cat");
+/* select cat-group from the DOM */
+const catGroup = document.querySelector(".cat-group");
 
-//click score
+/* select score from the DOM */
 const score = document.querySelector(".score");
 
-//add event listener to listen for click event and increment score
-cat.addEventListener("click", function() {
-    //get current score
-    let clicks = score.innerHTML;
-    //increase current score by 1
-    score.innerHTML = parseInt(clicks) + 1;
-}, false);
+//add each cat to catGroup
+for (cat in allCats) {
+
+    //create cat img element
+    let catImg = document.createElement('img');
+
+    //add class, id, source img,  and alt text
+    catImg.className = 'cat';
+    catImg.id = cat.name;
+    catImg.src = 'img/cat.png';
+    catImg.alt = 'cat image';
+
+    //add click event to cat
+    catImg.addEventListener('click', function() {
+        //get current score
+        let clicks = score.innerHTML;
+        //increase current score by 1
+        cat.clicked += 1  //update individual score
+        score.innerHTML = parseInt(clicks) + 1; //add to total score by updating DOM
+    }, false);
+
+    //append img to catGroup
+    catGroup.appendChild(catImg);
+
+}
