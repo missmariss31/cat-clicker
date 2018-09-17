@@ -1,10 +1,23 @@
 body {
     text-align: center;
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'Irish Grover', cursive;
+    width: 100%;
 }
 
-.cat {
+.header {
+    margin-top: 30px;
+}
+
+.game-title {
+    font-size: 60px;
+    color: darkgoldenrod;
+    text-shadow: 2px 1px lightslategray;
+    font-variant-caps: all-petite-caps;
+}
+
+.cat:hover {
     cursor: pointer;
+    transform: scale(1.25, 1.25);
 }
 
 .score {
