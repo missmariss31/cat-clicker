@@ -15,4 +15,4 @@ cat.addEventListener("click", function() {
     let clicks = score.innerHTML;
     //increase current score by 1
     score.innerHTML = parseInt(clicks) + 1;
-});
+}, false);

@@ -1,18 +1,26 @@
 body {
     text-align: center;
     font-family: 'Irish Grover', cursive;
-    width: 100%;
 }
 
 .header {
-    margin-top: 30px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 10px;
 }
 
 .game-title {
+    margin: 2px 2px;
     font-size: 60px;
     color: darkgoldenrod;
     text-shadow: 2px 1px lightslategray;
     font-variant-caps: all-petite-caps;
+}
+
+.cat {
+    margin: 30px 30px;
 }
 
 .cat:hover {
@@ -23,4 +31,18 @@ body {
 .score {
     font-size: 36px;
     color: darkred;
+}
+
+@media only screen and (max-width: 450px) {
+    .cat {
+        max-width: 350px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .cat {
+        min-width: 750px;
+        height: auto;
+    }
 }
