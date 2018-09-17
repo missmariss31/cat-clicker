@@ -6,3 +6,8 @@ body {
 .cat {
     cursor: pointer;
 }
+
+.score {
+    font-size: 36px;
+    color: darkred;
+}
