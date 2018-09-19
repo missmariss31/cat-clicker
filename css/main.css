@@ -24,6 +24,13 @@ body {
     font-variant-caps: all-petite-caps;
 }
 
+.add-cat {
+    font-size: 36px;
+    color: darkred;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
 .cat-group {
     flex-direction: row;
 }
@@ -35,6 +42,11 @@ body {
 .cat:hover {
     cursor: pointer;
     transform: scale(1.25, 1.25);
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .score {
@@ -49,9 +61,3 @@ body {
     }
 }
 
-@media only screen and (min-width: 1050px) {
-    .cat {
-        min-width: 550px;
-        height: auto;
-    }
-}
