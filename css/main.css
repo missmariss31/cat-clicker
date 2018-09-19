@@ -7,12 +7,12 @@ body {
 .container {
     display: flex;
     position: relative;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+
 }
 
 .header {
-    flex-direction: column;
     margin-top: 10px;
 }
 
@@ -24,24 +24,24 @@ body {
     font-variant-caps: all-petite-caps;
 }
 
-.add-cat {
+button.add-cat {
     font-size: 36px;
     color: darkred;
     cursor: pointer;
     border-radius: 10px;
+    box-shadow: 2px 2px;
 }
 
 .cat-group {
-    flex-direction: row;
-}
-
-.cat {
-    margin: 30px 30px;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .cat:hover {
     cursor: pointer;
     transform: scale(1.25, 1.25);
+    transform: rotate(10deg);
 }
 
 .name {
@@ -54,10 +54,8 @@ body {
     color: darkred;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
     .cat {
-        max-width: 250px;
-        height: auto;
+        max-width: 100%;
     }
 }
-

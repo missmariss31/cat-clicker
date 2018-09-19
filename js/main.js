@@ -41,9 +41,9 @@ const catMaker = function() {
 
     // add class, id, source img,  and alt text to img
     catImg.className = 'cat';
-    catImg.id = cat.name;
     catImg.src = cat.src;
     catImg.alt = 'cat image';
+    catImg.title = cat.name;
 
     // add class to p tag
     nameTag.className = 'name';
@@ -60,13 +60,18 @@ const catMaker = function() {
         };
     })(cat));
 
-    const addElements = function () {
+    // add img tag to p tag
+    nameTag.appendChild(catImg);
+
+    // this function will add any number of cats to the catGroup
+    const addElement = function () {
         for (let i = 0; i < arguments.length; i++) {
             // append element to catGroup
             catGroup.appendChild(arguments[i]);
         }
     };
 
-    addElements(catImg,nameTag);
+    // if you add more nameTag elements to the arguments, you get more cats!
+    addElement(nameTag);
 
 };
