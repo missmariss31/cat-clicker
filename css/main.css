@@ -1,3 +1,5 @@
+/* MAIN STYLES */
+
 body {
     text-align: center;
     font-family: 'Irish Grover', cursive;
@@ -12,50 +14,90 @@ body {
 
 }
 
+/* HEADER */
+
 .header {
     margin-top: 10px;
+}
+
+.header-line {
+    box-shadow: 1px 1px;
 }
 
 .game-title {
     margin: 2px 2px;
     font-size: 60px;
-    color: darkgoldenrod;
-    text-shadow: 2px 1px lightslategray;
+    color: darkslategray;
     font-variant-caps: all-petite-caps;
 }
 
+.score {
+    font-size: 42px;
+    color: darkred;
+}
+
+/* BUTTONS */
+
+.my-buttons {
+    margin-top: 20px;
+}
+
 button.add-cat {
-    font-size: 36px;
+    font-size: 32px;
     color: darkred;
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 2px 2px;
+    border: none;
+    margin: 5px 5px;
 }
+
+/* CATS */
 
 .cat-group {
     display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.show {
+    width: 250px;
+    height: 350px;
+    margin: 5px 5px;
+}
+
+.cat {
+    display: inline-flex;
+    width: 100%;
+    height: 50%;
+    margin-top: 30px;
+    border: 3px solid lightslategray;
+}
+
+.hide {
+    display: none;
 }
 
 .cat:hover {
     cursor: pointer;
-    transform: scale(1.25, 1.25);
-    transform: rotate(10deg);
+    transform: scale(1.25, 1.25) rotate(10deg);
 }
 
-.name {
+#name {
     font-size: 24px;
     font-weight: bold;
 }
 
-.score {
-    font-size: 36px;
-    color: darkred;
+#clicks {
+    font-size: 24px;
 }
 
+/* RESPONSIVE */
+
 @media only screen and (max-width: 600px) {
-    .cat {
-        max-width: 100%;
+    
+    .game-title {
+        font-size: 42px;
     }
 }

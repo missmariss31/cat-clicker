@@ -1,6 +1,6 @@
 # Cat Clicker
 
-![Cat](img/cat.jpg)
+![Cat](img/cat2.jpg)
 
 ### How many times can you click the cat before you get tired of it?
 

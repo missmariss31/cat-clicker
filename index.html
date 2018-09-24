@@ -8,20 +8,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Irish+Grover" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container">
-        <header class="header">
-            <h1 class="game-title">Cat Clicker</h1>
-            <button class="add-cat">Add Cat</button>
-            <h2 class="clicks">CLICK SCORE = <span class="score">0</span></h2>
-        </header>
-        <div class="cat-group">
+    <!DOCTYPE <!DOCTYPE html>
+    <html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cat Clicker</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Irish+Grover" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 class="game-title">Cat Clicker</h1>
+                <hr class="line">
+                <h2 class="clicks">TOTAL CLICK SCORE = <span class="score">0</span></h2>
+                <hr class="line">
+            </header>
+            <div class="my-buttons">
+                <button id='one' class="add-cat">Cute Kitten #1</button>
+                <button id='two' class="add-cat">Cute Kitten #2</button>
+                <button id='three' class="add-cat">Cute Kitten #3</button>
+            </div>
+            <div class="cat-group">
+                <!-- CAT VIEWER -->
+            </div>
         </div>
-    </div>
-</body>
-<script src="js/state.js"></script>
-<script src="js/main.js"></script>
-
-</html>
+    </body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/view.js"></script>
+    
+    </html>
