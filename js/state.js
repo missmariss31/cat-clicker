@@ -6,6 +6,7 @@ const allCats = [
         clickCount: 0,
         src: 'img/cat1.jpg',
         class: 'cat one',
+        nameID: 'one',
         visible: false
     },
     {
@@ -13,6 +14,7 @@ const allCats = [
         clickCount: 0,
         src: 'img/cat2.jpg',
         class: 'cat two',
+        nameID: 'two',
         visible: false
     },
     {
@@ -20,6 +22,7 @@ const allCats = [
         clickCount: 0,
         src: 'img/cat3.jpg',
         class: 'cat three',
+        nameID: 'three',
         visible: false
     }
 ];

@@ -25,5 +25,19 @@ const update = {
         view.render();
     },
 
+    changeName: function(buttonEl, newName) {
+        if (buttonEl.id === 'one') {
+            allCats[0].name = newName;
+        }
+        if (buttonEl.id === 'two') {
+            allCats[1].name = newName;
+        }
+        if (buttonEl.id === 'three') {
+            allCats[2].name = newName;
+        }
+
+        view.render();
+    }
+
 };
 

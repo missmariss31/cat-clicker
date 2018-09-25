@@ -47,11 +47,11 @@ button.add-cat {
     cursor: pointer;
     border-radius: 10px;
     border: 1px solid lightslategrey;
-    margin: 5px 5px;
+    margin: 5px 20px;
 }
 
 button.add-cat:hover {
-    border: 2px solid black;
+    border: 5px dotted black;
 }
 
 /* CATS */
@@ -90,6 +90,14 @@ button.add-cat:hover {
 #name {
     font-size: 24px;
     font-weight: bold;
+    max-width: 255px;
+    word-wrap: break-word;
+}
+
+.change-name {
+    font-size: 24px;
+    color: darkred;
+    cursor: pointer;
 }
 
 #clicks {
