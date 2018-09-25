@@ -27,7 +27,6 @@ body {
 .game-title {
     margin: 2px 2px;
     font-size: 60px;
-    color: darkslategray;
     font-variant-caps: all-petite-caps;
 }
 
@@ -47,9 +46,12 @@ button.add-cat {
     color: darkred;
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 2px 2px;
-    border: none;
+    border: 1px solid lightslategrey;
     margin: 5px 5px;
+}
+
+button.add-cat:hover {
+    border: 2px solid black;
 }
 
 /* CATS */
@@ -82,6 +84,7 @@ button.add-cat {
 .cat:hover {
     cursor: pointer;
     transform: scale(1.25, 1.25) rotate(10deg);
+    transition-duration: 500ms;
 }
 
 #name {

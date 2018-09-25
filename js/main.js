@@ -8,9 +8,22 @@ const update = {
         view.render();
     },
 
-    addToClick: function(cat) {
-        cat.clickCount += 1;
+    addToClick: function(catEl) {
+
+        if (catEl.className === 'cat one') {
+            allCats[0].clickCount += 1;
+        }
+        if (catEl.className === 'cat two') {
+            allCats[1].clickCount += 1;
+        }
+        if (catEl.className === 'cat three') {
+            allCats[2].clickCount += 1;
+        }
+
+        totalClicks += 1;
+
         view.render();
-    }
+    },
+
 };
 

@@ -23,3 +23,5 @@ const allCats = [
         visible: false
     }
 ];
+
+let totalClicks = 0;
