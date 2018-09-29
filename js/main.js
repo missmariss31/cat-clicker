@@ -13,14 +13,11 @@ const update = {
 
     addToClick: function(catEl) {
         // add clicks to clicked cat
-        if (catEl.className === 'cat one') {
-            allCats[0].clickCount += 1;
-        }
-        if (catEl.className === 'cat two') {
-            allCats[1].clickCount += 1;
-        }
-        if (catEl.className === 'cat three') {
-            allCats[2].clickCount += 1;
+        for (let i=0; i < allCats.length; i++) {
+            let cat = allCats[i];
+            if (catEl.className === cat.classes) {
+                cat.clickCount += 1;
+            }
         }
         // add clicks to total
         totalClicks += 1;
@@ -30,14 +27,10 @@ const update = {
 
     changeName: function(buttonEl, newName) {
         // change the name of the kitten selected
-        if (buttonEl.id === 'one') {
-            allCats[0].name = newName;
-        }
-        if (buttonEl.id === 'two') {
-            allCats[1].name = newName;
-        }
-        if (buttonEl.id === 'three') {
-            allCats[2].name = newName;
+        for (let i=0; i < allCats.length; i++) {
+            if (buttonEl.id === allCats[i].nameID) {
+                allCats[0].name = newName;
+            }
         }
 
         // render the page with updated state

@@ -1,19 +1,27 @@
 
 const view = {
     init: function () {
-
+        // select elements that will update
         this.catGroup = $('.cat-group');
         this.clickScore = $('.score');
-
+        // select buttons for default cats
         const showCat = $('.add-cat').toArray();
+        // select admin button
+        const adminBtn = $('.new-cat');
 
-        // add click event to each cat button
+        // add click event to each add cat button
         showCat.forEach(function (addedCat, i) {
             addedCat.addEventListener('click', function () {
                 // update state of cat selected
                 update.showCat(allCats[i]);
             });
         });
+
+        // add click event to admin button
+        adminBtn.on('click', function() {
+            alert("Working on Form");
+        })
+
 
         // add click event to each cat
         this.catGroup.on('click', '.cat', function (e) {
@@ -29,7 +37,7 @@ const view = {
             // update name of cat selected
             update.changeName(buttonEl, newName);
         })
-
+        // render the page to current state
         view.render();
     },
     render: function () {
@@ -39,7 +47,7 @@ const view = {
             if (cat.visible) {
                 htmlStr +=
                     `<div class='show'>
-                        <img class='${cat.class}' src='${cat.src}'>
+                        <img class='${cat.classes}' src='${cat.src}'>
                         <p id='name'>${cat.name}</p>
                         <button class='change-name' id='${cat.nameID}'>Change Name</button>
                         <p id='clicks'>${cat.clickCount}</p>

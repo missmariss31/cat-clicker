@@ -41,17 +41,17 @@ body {
     margin-top: 20px;
 }
 
-button.add-cat {
-    font-size: 32px;
+button {
+    font-size: 24px;
     color: darkred;
     cursor: pointer;
     border-radius: 10px;
     border: 1px solid lightslategrey;
-    margin: 5px 35px;
+    margin: 5px 40px;
 }
 
 button.add-cat:hover {
-    border: 5px dotted black;
+    border: 2px dotted black;
 }
 
 /* CATS */

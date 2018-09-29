@@ -5,7 +5,7 @@ const allCats = [
         name: 'Kitten #1',
         clickCount: 0,
         src: 'img/cat1.jpg',
-        class: 'cat one',
+        classes: 'cat 0',
         nameID: 'one',
         visible: false
     },
@@ -13,7 +13,7 @@ const allCats = [
         name: 'Kitten #2',
         clickCount: 0,
         src: 'img/cat2.jpg',
-        class: 'cat two',
+        classes: 'cat 1',
         nameID: 'two',
         visible: false
     },
@@ -21,10 +21,12 @@ const allCats = [
         name: 'Kitten #3',
         clickCount: 0,
         src: 'img/cat3.jpg',
-        class: 'cat three',
+        classes: 'cat 2',
         nameID: 'three',
         visible: false
     }
 ];
 
+
+// state of total clicks
 let totalClicks = 0;
