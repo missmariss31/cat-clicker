@@ -19,7 +19,7 @@ const view = {
 
         // add click event to admin button
         adminBtn.on('click', function() {
-            alert("Working on Form");
+            $(".form").toggleClass("hide");
         })
 
 
