@@ -29,7 +29,7 @@ const update = {
         // change the name of the kitten selected
         for (let i=0; i < allCats.length; i++) {
             if (buttonEl.className.includes(i)) {
-                allCats[0].name = newName;
+                allCats[i].name = newName;
             }
         }
 
