@@ -46,26 +46,36 @@ button {
     color: darkred;
     cursor: pointer;
     border-radius: 10px;
-    border: 1px solid lightslategrey;
+    border: 2px solid lightslategrey;
     margin: 5px 40px;
 }
 
-button.add-cat:hover {
+button:hover {
     border: 2px dotted black;
 }
 
 .form {
     display: block;
+    position: absolute;
+    background-color: lightskyblue;
+    opacity:0.95;
     margin: 5% 25% 5%;
     font-size: 18px;
-    padding: 5px 5px;
+    padding: 5%;
     text-align: center;
-    border: 2px solid black;
+    border: 2px dashed black;
     border-radius: 10px;
 }
 
 .hide {
     display: none;
+}
+
+.new-cat-btn {
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid lightslategrey;
+    border-radius: 10px;
 }
 
 

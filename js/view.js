@@ -8,6 +8,8 @@ const view = {
         const showCat = $('.add-cat').toArray();
         // select admin button
         const adminBtn = $('.new-cat');
+        // select new-cat-button
+        const newCat = $('.new-cat-btn');
 
         // add click event to each add cat button
         showCat.forEach(function (addedCat, i) {
@@ -20,7 +22,13 @@ const view = {
         // add click event to admin button
         adminBtn.on('click', function() {
             $(".form").toggleClass("hide");
-        })
+        });
+        
+        // add click event to new cat button
+        newCat.click(function(e) {
+            e.preventDefault()
+            update.addNewCat();
+        });
 
 
         // add click event to each cat
@@ -33,6 +41,7 @@ const view = {
         // add click event to change name buttons
         this.catGroup.on('click', '.change-name', function (e) {
             let buttonEl = e.currentTarget;
+            console.log(buttonEl);
             let newName = prompt("What is your kitten's name?");
             // update name of cat selected
             update.changeName(buttonEl, newName);
@@ -49,7 +58,7 @@ const view = {
                     `<div class='show'>
                         <img class='${cat.classes}' src='${cat.src}'>
                         <p id='name'>${cat.name}</p>
-                        <button class='change-name' id='${cat.nameID}'>Change Name</button>
+                        <button class='change-name ${i}'>Change Name</button>
                         <p id='clicks'>${cat.clickCount}</p>
                     </div>
                     `;

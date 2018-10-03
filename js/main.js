@@ -28,10 +28,36 @@ const update = {
     changeName: function(buttonEl, newName) {
         // change the name of the kitten selected
         for (let i=0; i < allCats.length; i++) {
-            if (buttonEl.id === allCats[i].nameID) {
+            if (buttonEl.className.includes(i)) {
                 allCats[0].name = newName;
             }
         }
+
+        // render the page with updated state
+        view.render();
+    },
+
+    addNewCat: function() {
+        // get form data
+        let newCatData = $('form').serializeArray();
+        // make new cat object
+        let newCatObject = {
+            name: '',
+            clickCount: 0,
+            src: 'img/cat1.jpg',
+            classes: `cat ${allCats.length}`,
+            visible: true
+        };
+        // add values for name and link
+        newCatData.forEach(function(field) {
+            if (field.name === "name") {
+                newCatObject.name = field.value;
+            } else if (field.name === "link") {
+                newCatObject.src = field.value;
+            }
+        });
+        // add new object to state
+        allCats.push(newCatObject);
 
         // render the page with updated state
         view.render();
