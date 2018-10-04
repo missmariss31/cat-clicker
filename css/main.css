@@ -85,13 +85,12 @@ button:hover {
     display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .show {
     width: 250px;
     height: 350px;
-    margin: 20px 20px 5px 20px;
+    margin: 10px 10px;
 }
 
 .cat {
@@ -122,6 +121,7 @@ button:hover {
 
 #clicks {
     font-size: 24px;
+    border: 2px dashed darkred;
 }
 
 /* RESPONSIVE */

@@ -56,10 +56,10 @@ const view = {
             if (cat.visible) {
                 htmlStr +=
                     `<div class='show'>
+                        <p id='clicks'>${cat.clickCount}</p>
                         <img class='${cat.classes}' src='${cat.src}'>
                         <p id='name'>${cat.name}</p>
                         <button class='change-name ${i}'>Change Name</button>
-                        <p id='clicks'>${cat.clickCount}</p>
                     </div>
                     `;
 
