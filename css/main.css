@@ -13,10 +13,10 @@ body {
 }
 
 .container {
+    min-height: 1250px;
     display: flex;
     position: relative;
     flex-direction: column;
-    justify-content: center;
     border: 2px solid lightslategray
 
 }
@@ -136,5 +136,8 @@ button:hover {
     
     .game-title {
         font-size: 42px;
+    }
+    .score {
+        font-size: 30px;
     }
 }
