@@ -1,4 +1,10 @@
 /* MAIN STYLES */
+html {
+    background-image: url('../img/background.jpg');
+    background-position: center;
+    opacity: 0.9;
+    min-height: 1250px;
+}
 
 body {
     text-align: center;
@@ -11,6 +17,7 @@ body {
     position: relative;
     flex-direction: column;
     justify-content: center;
+    border: 2px solid lightslategray
 
 }
 
@@ -57,14 +64,12 @@ button:hover {
 .form {
     display: block;
     position: absolute;
-    background-color: lightskyblue;
+    background-color: rgb(183, 220, 243);
     opacity:0.95;
-    margin: 5% 25% 5%;
     font-size: 18px;
-    padding: 5%;
+    padding: 2%;
     text-align: center;
     border: 2px dashed black;
-    border-radius: 10px;
 }
 
 .hide {
@@ -120,6 +125,7 @@ button:hover {
 }
 
 #clicks {
+    background-color: lightgray;
     font-size: 24px;
     border: 2px dashed darkred;
 }

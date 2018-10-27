@@ -23,7 +23,7 @@ const view = {
         adminBtn.on('click', function() {
             let text = adminBtn.text();
             // toggle innerText
-            adminBtn.text(text == "Add Your Own Cat" ? "Hide Form" : "Add Your Own Cat");
+            adminBtn.text(text == "Add Your Own Cat" ? "Close Form" : "Add Your Own Cat");
             // toggle hiding and showing form
             $(".form").toggleClass("hide");
         });
